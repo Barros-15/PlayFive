@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jogos</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <a href="Login.html">Login</a>
-    <a href="index.html">Menu</a>
-    <div class="Jogos">
-        <div class="paginas">
-          <a href="Uncharted.html">
-            <img src="Css fotos/unch.webp" onClick="Event" />
-          </a>
-        </div>
-        <div class="paginas">
-          <a href="Fifa25.html">
-            <img src="Css fotos/fifa.jpeg" onClick="Event" />
-          </a>
-        </div>
-        <div class="paginas">
-          <a href="The Last of Us.html">
-            <img src="Css fotos/Thelast.jpg" onClick="Event" />
-          </a>
+    <link rel="stylesheet" href="styleJogos.css" />
+  </head>
+  <header>
+    <div class="container">
+      <img src="Css fotos/logo.png" />
+    </div>
+  </header>
+  <body style="background-image: url(fundoGame.jpg)">
+    <div class="card">
+      <div class="imagen">
+        <div class="card1">
+          <a href="index.html">MENU</a>
         </div>
       </div>
-</body>
+      <div class="card2">
+        <a href="Login.html">LOGIN</a>
+      </div>
+    </div>
+    <div class="Jogos">
+      <div class="paginas" draggable="true">
+        <img src="Css fotos/dasygone.jpg" alt="Dasygone" />
+      </div>
+      <div class="paginas" draggable="true">
+        <img src="Css fotos/fifa.jpeg" alt="Fifa" />
+      </div>
+      <div class="paginas" draggable="true">
+        <img src="Css fotos/Thelast.jpg" alt="The Last of Us" />
+      </div>
+      <div class="paginas" draggable="true">
+        <img src="Css fotos/cs.jpeg" alt="Counter-Strike" />
+      </div>
+      <div class="paginas" draggable="true">
+        <img src="Css fotos/speed.jpeg" alt="Need for Speed" />
+      </div>
+    </div>
+
+    <section class="boxes">
+      <div class="box" id="box1">Melhor Historia</div>
+      <div class="box" id="box2">Melhor Trilha Sonora</div>
+      <div class="box" id="box3">Sua Preferencia</div>
+    </section>
+
+    <script src="jogos.js"></script>
+  </body>
 </html>

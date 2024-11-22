@@ -1,10 +1,10 @@
 
-const draggables = document.querySelectorAll('.paginas img'); // Selecionar imagens
+const draggables = document.querySelectorAll('.paginas img'); 
 const boxes = document.querySelectorAll('.box');
 
 draggables.forEach((img) => {
     img.addEventListener('dragstart', (e) => {
-        e.dataTransfer.setData('text/plain', e.target.src); // Salva o caminho da imagem
+        e.dataTransfer.setData('text/plain', e.target.src);
         e.dataTransfer.effectAllowed = 'copy';
     });
 });
